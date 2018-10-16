@@ -22,7 +22,7 @@ Customer service people can answer users' question and complaints.
 
 ### Technology architecture
 
-  #### Traditional architecture
+  #### &emsp Traditional architecture
 
 
 
