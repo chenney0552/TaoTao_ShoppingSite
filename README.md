@@ -25,6 +25,20 @@ Customer service people can answer users' question and complaints.
 Distribute architecture:
 
   &emsp; Design different modules by their function.
+
+Advantages:
+
+- Use interfaces to do the communication, reduced the coupling among different modules.
+
+- Differnet teams can focus on different functions.
+
+- Easy to add new functions, only need to add a new module and invoke other interfaces.
+
+- Can be deployed in a distribute environemt.
+
+Disadvantages:
+
+- The communication between two modules use the http request, add the workload.
   
 
 
