@@ -10,7 +10,7 @@ Customer service people can answer users' question and complaints.
 
 ### Function Description
 
-Background Management System: Manage the products, orders, categories and product specifications.
+- Background Management System: Manage the products, orders, categories and product specifications.
 
 
 
