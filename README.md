@@ -20,7 +20,7 @@ Customer service people can answer users' question and complaints.
 
 - Single sign on system: Provide certificates for users among different systems and query users' information.
 
-### Technology architecture
+### System architecture
 
 Distribute architecture:
 
@@ -43,5 +43,24 @@ Disadvantages:
 System sketch map:
 
 ![image](https://github.com/ZehuaWang/TaoTao_ShoppingSite/blob/master/pic/SystemArch.png)
+
+### Technology Stack
+
+Technology and Framework:
+
+- Spring SpringMVC Mybatis
+
+- JSP JSTL jQuery EasyUI KindEditor CSS+DIV
+
+- Redis (Cache Server)
+
+- Solr (Search Server)
+
+- httpClient (Invoke the service)
+
+- Mysql (Database Server)
+
+- Nginx (Web Server)
+
 
 
