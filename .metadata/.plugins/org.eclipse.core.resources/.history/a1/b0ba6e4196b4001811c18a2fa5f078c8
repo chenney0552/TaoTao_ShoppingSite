@@ -1,0 +1,2 @@
+#Order number key
+REDIS_ORDER_GEN_KEY=REDIS_ORDER_GEN_KEY

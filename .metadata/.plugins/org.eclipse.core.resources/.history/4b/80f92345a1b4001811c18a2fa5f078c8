@@ -1,0 +1,22 @@
+package com.taotao.portal.service.impl;
+
+import com.taotao.common.utils.HttpClientUtil;
+import com.taotao.common.utils.JsonUtils;
+import com.taotao.portal.pojo.OrderInfo;
+import com.taotao.portal.service.OrderService;
+
+public class OrderServiceImpl implements OrderService {
+
+	@Override
+	public String createOrder(OrderInfo orderInfo) {
+
+		// 把OrderInfo转换成json
+		String objectToJson = JsonUtils.objectToJson(orderInfo);
+
+		//提交订单数据
+		HttpClientUtil.doPostJson(url, json);
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.taotao.portal.service.impl;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.taotao.pojo.TbUser;
+import com.taotao.portal.service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public TbUser getUserByToken(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

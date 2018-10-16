@@ -1,0 +1,26 @@
+package com.taotao.sso.service.impl;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.sso.service.LoginService;
+
+/**
+ * 用户登录服务
+ * @author Homeuser
+ *
+ */
+@Service
+public class LoginServiceImpl implements LoginService {
+
+	@Override
+	public TaotaoResult login(String username, String password, HttpServletRequest request,
+			HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

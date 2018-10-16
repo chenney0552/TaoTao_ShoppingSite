@@ -1,0 +1,27 @@
+package com.taotao.sso.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.mapper.TbUserMapper;
+import com.taotao.sso.service.RegisterService;
+
+/**
+ * 注册服务
+ * @author Homeuser
+ *
+ */
+public class RegisterServiceImpl implements RegisterService {
+
+	@Autowired
+	private TbUserMapper userMapper;
+	
+	@Override
+	public TaotaoResult chechData(String param, int type) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

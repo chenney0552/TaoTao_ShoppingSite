@@ -1,0 +1,21 @@
+package com.taotao.portal.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.taotao.portal.service.CartService;
+
+/**
+ * 订单处理Controller
+ * @author Homeuser
+ *
+ */
+@Controller
+public class OrderController {
+
+	@Autowired
+	private CartService cartService;
+	
+	
+	
+}

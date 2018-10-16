@@ -1,0 +1,24 @@
+REST_BASE_URL=http://localhost:8081/rest
+REST_CONTENT_URL=/content/
+REST_CONTENT_AD1_CID=89
+
+#Product base information URL
+REST_ITEM_BASE_URL=/item/base/
+
+REST_ITEM_DESC_URL=/item/desc/
+
+REST_ITEM_PARAM_URL=/item/param/
+
+#Search Service URL
+SEARCH_BASE_URL=http://localhost:8083/search/q
+
+#static page adddress
+STATIC_PAGE_PATH=D:/html/
+
+#SSO URL
+SSO_BASE_URL=http://localhost:8084
+
+SSO_USER_TOKEN_SERVICE=/user/token/
+
+#SSO LOGIN URL
+SSO_LOGIN_URL=http://localhost:8084/page/login

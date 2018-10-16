@@ -1,0 +1,36 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.taotao.pojo.TbItem;
+import com.taotao.portal.service.ItemService;
+
+/**
+ * 查询商品信息服务
+ * @author Homeuser
+ *
+ */
+
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Value("${REST_ITEM_BASE_URL}")
+	private String REST_ITEM_BASE_URL;
+	
+	@Value("${REST_BASE_URL}")
+	private String REST_BASE_URL;
+	
+	@Override
+	public TbItem getItemById(Long itemId)
+	{
+		return null;
+		
+		
+	}
+	
+	
+	
+	
+	
+}

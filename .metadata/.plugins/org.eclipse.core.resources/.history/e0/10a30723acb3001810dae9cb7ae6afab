@@ -1,0 +1,4 @@
+#redis session
+REDIS_SESSION_KEY=REDIS_SESSION
+
+

@@ -1,0 +1,15 @@
+REDIS_CONTENT_KEY=REDIS_CONTENT_KEY
+
+#Redis product information key
+REDIS_ITEM_KEY=REDIS_ITEM
+ITEM_BASE_INFO_KEY=ITEM_BASE_INFO
+
+#Product description
+ITEM_DESC_KEY=ITEM_DESC
+
+#Product specifications
+ITEM_PARAM_KEY=ITEM_PARAM
+ 
+#Cache expire time(default one day)
+ITEM_EXPIRE_SECOND=86400
+ 

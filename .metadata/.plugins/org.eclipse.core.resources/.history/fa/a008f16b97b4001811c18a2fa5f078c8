@@ -1,0 +1,64 @@
+package com.taotao.order.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.mapper.TbOrderItemMapper;
+import com.taotao.mapper.TbOrderMapper;
+import com.taotao.mapper.TbOrderShippingMapper;
+import com.taotao.order.component.JedisClient;
+import com.taotao.order.pojo.OrderInfo;
+import com.taotao.order.service.OrderService;
+
+/**
+ * 生成订单服务
+ * 
+ * @author Homeuser
+ *
+ */
+@Service
+public class OrderServiceImpl implements OrderService {
+
+	@Autowired
+	private TbOrderMapper orderMapper;
+
+	@Autowired
+	private TbOrderItemMapper orderItemMapper;
+
+	@Autowired
+	private TbOrderShippingMapper orderShippingMapper;
+
+	@Autowired
+	private JedisClient jedisClient;
+
+	@Value("${REDIS_ORDER_GEN_KEY}")
+	private String REDIS_ORDER_GEN_KEY;
+
+	@Value("${ORDER_ID_BEGIN}")
+	private String ORDER_ID_BEGIN;
+
+	@Override
+	public TaotaoResult createOrder(OrderInfo orderInfo) {
+
+		// 生成订单号 使用redis
+		// 取出订单号
+		String id = jedisClient.get(REDIS_ORDER_GEN_KEY);
+
+		if (StringUtils.isEmpty(id)) {
+			// 如果订单号生成的key不存在 设置初始值
+			jedisClient.set(REDIS_ORDER_GEN_KEY, ORDER_ID_BEGIN);
+		}
+
+		Long orderId = jedisClient.incr(REDIS_ORDER_GEN_KEY);
+		
+		//补全字段ORDER_ID_BEGIN
+		orderInfo.setOrderId(.toString());
+		
+		
+		return null;
+	}
+
+}

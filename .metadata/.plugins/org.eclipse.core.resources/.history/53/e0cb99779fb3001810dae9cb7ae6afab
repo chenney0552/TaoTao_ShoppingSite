@@ -1,0 +1,21 @@
+package com.taotao.sso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.taotao.sso.service.RegisterService;
+
+/**
+ * 用户注册接口
+ * @author Homeuser
+ *
+ */
+@Controller
+public class RegisterController {
+
+	@Autowired
+	private RegisterService registerService;
+	
+	
+	
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;taotao-portal/src/main/webapp/商品分类数据格式.txt&apos; to &apos;category.json&apos;" description="Rename resource &apos;商品分类数据格式.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/商品分类数据格式.txt" name="category.json" stamp="1534785500628" updateReferences="true"/>&#x0A;&#x0A;</session>

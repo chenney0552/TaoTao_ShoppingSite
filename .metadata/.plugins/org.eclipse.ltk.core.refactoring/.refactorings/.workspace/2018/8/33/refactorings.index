@@ -1,0 +1,5 @@
+1534609848583	Delete resource 'taotao-rest/src/main/resources/resource/client.conf'
+1534612499916	Delete resource 'taotao-portal/src/main/resources/mybatis'
+1534612513195	Delete 2 resources
+1534612617208	Delete resource 'taotao-portal/src/main/resources/spring/applicationContext-dao.xml'
+1534612685356	Delete resource 'taotao-portal/src/main/resources/spring/applicationContext-trans.xml'

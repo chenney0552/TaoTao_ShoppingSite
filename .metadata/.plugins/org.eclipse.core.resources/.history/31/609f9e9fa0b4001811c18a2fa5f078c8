@@ -1,0 +1,8 @@
+package com.taotao.portal.service;
+
+public interface OrderService {
+
+	
+	String createOrder(OrderInfo orderInfo);
+	
+}

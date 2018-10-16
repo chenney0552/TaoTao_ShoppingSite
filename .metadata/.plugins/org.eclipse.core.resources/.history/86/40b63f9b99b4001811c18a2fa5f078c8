@@ -1,0 +1,17 @@
+package com.taotao.order.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.taotao.order.service.OrderService;
+
+/**
+ * 生成订单服务
+ * @author Homeuser
+ *
+ */
+public class OrderController {
+
+	@Autowired
+	private OrderService orderService;
+	
+}

@@ -1,0 +1,80 @@
+package com.taotao.solrj;
+
+import java.nio.charset.Charset;
+
+import org.apache.solr.client.solrj.SolrQuery;
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.impl.CloudSolrServer;
+import org.apache.solr.client.solrj.impl.HttpSolrServer;
+import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.solr.common.SolrDocument;
+import org.apache.solr.common.SolrDocumentList;
+import org.apache.solr.common.SolrInputDocument;
+import org.junit.Test;
+import org.springframework.jdbc.datasource.lookup.SingleDataSourceLookup;
+
+public class SolrJTest {
+
+	@Test
+	public void testSolrJ() throws Exception {
+
+		// SolrJ是客户端
+		// 单机版
+		SolrServer solrServer = new HttpSolrServer("http://192.168.25.132:8080/solr");
+
+		// 创建一个文档对象
+		SolrInputDocument document = new SolrInputDocument();
+
+		// 添加域
+		document.addField("id", "solortest01");
+		document.addField("item_title", "测试商品");
+		document.addField("item_sell_point", "卖点");
+
+		// 添加到索引库
+		solrServer.add(document);
+
+		// 提交
+		solrServer.commit();
+	}
+	
+	@Test
+	public void testQuery()throws Exception{
+		SolrServer solrServer = new HttpSolrServer("http://192.168.25.132:8080/solr");
+		SolrQuery query = new SolrQuery();
+		//query.setQuery("*:*");
+		String keyword="手机";
+		int page=1;
+		int rows=1000;
+		byte[] ptext = keyword.getBytes("ISO-8859-1"); 
+		keyword = new String(ptext,Charset.forName("UTF-8")); 
+		query.setQuery(keyword);
+		query.setStart((page-1)*rows);
+		query.setRows(rows);
+		QueryResponse queryResponse = solrServer.query(query);
+		System.out.println(query);
+		SolrDocumentList solrDocumentList =	queryResponse.getResults();
+		for(SolrDocument solrDocument:solrDocumentList) {
+			//System.out.println(solrDocument.get("id"));
+			//System.out.println(solrDocument.get("item_sell_point"));
+		}
+	}
+	
+	@Test
+	public void testSolrCloud() throws Exception
+	{
+		//创建solrserver对象
+		CloudSolrServer solrServer = new CloudSolrServer("192.168.25.132:2181,192.168.25.132:2182,192.168.25.132:2183");
+		//设置默认collection
+		solrServer.setDefaultCollection("collection1");
+		//创建文档对象
+		SolrInputDocument document = new SolrInputDocument();
+		document.addField("id", "test01");
+		//添加文档
+		document.addField("item_title", "title1");
+		solrServer.add(document);
+		solrServer.commit();
+		
+		
+		
+	}
+}

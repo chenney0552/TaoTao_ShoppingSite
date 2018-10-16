@@ -1,0 +1,5 @@
+package com.taotao.sso.component.impl;
+
+public class JedicClientCluster {
+
+}

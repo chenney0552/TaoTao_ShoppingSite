@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+externalMigrateFromAuthorizationDatabase/isMigrated=true
+migrateFromAuthorizationDatabase/isMigrated=true
+repositories/00905641859a00181b0bfb4948e0743d=00905641859a00181b0bfb4948e0743d;https\://Homeuser-PC\:8443/svn/taotao-javaee/;trunk/taotao-parent;branches;tags;trunk;true;;;;false;;;0
+repositories/1032bd5b7f9a00181028bede6db6337d=1032bd5b7f9a00181028bede6db6337d;https\://Homeuser-PC\:8443/svn/taotao-javaee/;trunk/taotao-parent;branches;tags;trunk;true;;;;false;;;0
+repositories/30b7ac0e889a00181b0bfb4948e0743d=30b7ac0e889a00181b0bfb4948e0743d;https\://Homeuser-PC\:8443/svn/taotao-mall/trunk/taotao-parent;https\://Homeuser-PC\:8443/svn/taotao-mall/trunk/taotao-parent;branches;tags;trunk;true;19742311-3d41-3b4c-8704-829fb4ddbd24;https\://homeuser-pc\:8443/svn/taotao-mall;;false;;;0
+repositories/c015126a889a00181b0bfb4948e0743d=c015126a889a00181b0bfb4948e0743d;https\://Homeuser-PC\:8443/svn/taotao-mall/trunk;https\://Homeuser-PC\:8443/svn/taotao-mall/trunk;branches;tags;trunk;true;19742311-3d41-3b4c-8704-829fb4ddbd24;https\://homeuser-pc\:8443/svn/taotao-mall;;false;;;0
+synch_info/contigous=true

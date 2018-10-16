@@ -1,0 +1,48 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.common.utils.HttpClientUtil;
+import com.taotao.pojo.TbItem;
+import com.taotao.portal.service.ItemService;
+import com.taotao.portal.service.StaticPageService;
+
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+
+/**
+ * 生成商品详情页 静态网页
+ * @author Homeuser
+ *
+ */
+@Service
+public class StaticPageServiceImpl implements StaticPageService {
+
+	@Autowired
+	private ItemService itemService;
+	
+	@Autowired
+	private FreeMarkerConfigurer freeMarkerConfigurer;
+	
+	@Override
+	public TaotaoResult genItemHtml(Long itemId) {
+		
+		//商品基本信息
+		TbItem tbItem=itemService.getItemById(itemId);
+		//商品描述
+		String itemDesc=itemService.getItemDescById(itemId);
+		//商品规格参数
+		String itemParam=itemService.getItemParamById(itemId);
+		//生成静态页面
+		Configuration configuration=freeMarkerConfigurer.getConfiguration();
+		Template template=configuration.getTemplate("item.ftl");
+		
+		
+		return null;
+	}
+
+}

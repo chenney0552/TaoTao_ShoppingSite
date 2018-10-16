@@ -1,0 +1,15 @@
+package com.taotao.order.service.impl;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.order.pojo.OrderInfo;
+import com.taotao.order.service.OrderService;
+
+public class OrderServiceImpl implements OrderService {
+
+	@Override
+	public TaotaoResult createOrder(OrderInfo orderInfo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

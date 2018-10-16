@@ -1,0 +1,29 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.taotao.pojo.TbItem;
+import com.taotao.portal.service.ItemService;
+
+/**
+ * 查询商品信息服务
+ * @author Homeuser
+ *
+ */
+
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Override
+	public TbItem getItemById(Long itemId)
+	{
+		return null;
+		
+		
+	}
+	
+	
+	
+	
+	
+}

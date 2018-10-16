@@ -1,0 +1,79 @@
+package com.taotao.portal.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.common.utils.CookieUtils;
+import com.taotao.common.utils.JsonUtils;
+import com.taotao.portal.pojo.CartItem;
+import com.taotao.portal.service.CartService;
+
+/**
+ * 购物车实现
+ * 
+ * @author Homeuser
+ *
+ */
+public class CartServiceImpl implements CartService {
+
+	@Override
+	public TaotaoResult addCart(Long itemId, Integer num, HttpServletRequest request, HttpServletResponse response) {
+
+		// 从cookie中取出购物车商品列表
+		List<CartItem> itemList = getCartItemList(request);
+		
+		// 从商品列表中查询列表是否存在此商品
+		boolean haveFlg = false;
+		
+		for(CartItem cartItem : itemList) {
+			
+			//如果商品存在 加上对应的数量
+			if(cartItem.getId() == itemId) {
+				cartItem.setNum(cartItem.getNum()+num);
+				haveFlg = true;
+				break;
+			}
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		return null;
+	}
+
+	/**
+	 * 取出购物车商品列表
+	 * 
+	 * @param request
+	 * @return
+	 */
+	private List<CartItem> getCartItemList(HttpServletRequest request) {
+
+		try {
+			// 从cookie中取商品列表
+
+			String json = CookieUtils.getCookieValue(request, "TT_CART", true);
+
+			// 把json转换成java对象
+			List<CartItem> list = JsonUtils.jsonToList(json, CartItem.class);
+
+			return list == null ? new ArrayList<CartItem>() : list;
+		}
+
+		catch (Exception e) {
+
+			return new ArrayList<CartItem>();
+
+		}
+
+	}
+
+}

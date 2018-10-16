@@ -1,0 +1,5 @@
+package com.taotao.rest.service.impl;
+
+public class ItemServiceImpl {
+
+}

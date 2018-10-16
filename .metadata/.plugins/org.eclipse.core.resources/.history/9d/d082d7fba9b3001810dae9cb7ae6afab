@@ -1,0 +1,51 @@
+package com.taotao.sso.service.impl;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.mapper.TbUserMapper;
+import com.taotao.pojo.TbContentCategoryExample.Criteria;
+import com.taotao.pojo.TbUser;
+import com.taotao.pojo.TbUserExample;
+import com.taotao.sso.service.LoginService;
+
+/**
+ * 用户登录服务
+ * @author Homeuser
+ *
+ */
+@Service
+public class LoginServiceImpl implements LoginService {
+
+	@Autowired
+	private TbUserMapper userMapper;
+	
+	@Override
+	public TaotaoResult login(String username, String password, HttpServletRequest request,
+			HttpServletResponse response) {
+		
+		//校验用户名和密码是否正确
+		TbUserExample example = new TbUserExample();
+		com.taotao.pojo.TbUserExample.Criteria criteria = example.createCriteria();
+		criteria.andUsernameEqualTo(username);
+		List<TbUser> list = userMapper.selectByExample(example);
+		
+		//取出用户信息
+		if(list == null || list.isEmpty())
+		{
+			return TaotaoResult.build(400, "用户名或密码错误");
+		}
+		TbUser user=list.get(0);
+		
+		
+		
+		return null;
+	}
+
+}
