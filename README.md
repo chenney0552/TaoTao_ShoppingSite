@@ -22,7 +22,10 @@ Customer service people can answer users' question and complaints.
 
 ### Technology architecture
 
-  #### &emsp Traditional architecture
+Distribute architecture:
+
+  > Design different modules by their function.
+  
 
 
 
