@@ -85,4 +85,4 @@ Tools and environment:
 The homepage of Taotao:
 
 
-![image]()
+![image](https://github.com/ZehuaWang/TaoTao_ShoppingSite/blob/master/pic/portal.png)
