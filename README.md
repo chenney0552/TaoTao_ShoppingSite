@@ -12,5 +12,13 @@ Customer service people can answer users' question and complaints.
 
 - Background Management System: Manage the products, orders, categories and product specifications.
 
+- Portal System: Users can register the account and log in the system, browse the products, make an order.
+
+- Order System: Merhants can query the orders, change the orders' state and handle the orders.
+
+- Search System: Integrate solr to provide full-text search.
+
+- Single sign on system: Provide certificates for users among different systems and query users' information.
+
 
 
