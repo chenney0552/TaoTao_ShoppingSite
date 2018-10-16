@@ -24,7 +24,7 @@ Customer service people can answer users' question and complaints.
 
 Distribute architecture:
 
-  > Design different modules by their function.
+  &emsp; Design different modules by their function.
   
 
 
