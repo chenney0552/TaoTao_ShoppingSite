@@ -20,5 +20,9 @@ Customer service people can answer users' question and complaints.
 
 - Single sign on system: Provide certificates for users among different systems and query users' information.
 
+### Technology architecture
+
+#### Traditional architecture
+
 
 
