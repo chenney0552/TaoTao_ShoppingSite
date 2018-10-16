@@ -62,5 +62,22 @@ Technology and Framework:
 
 - Nginx (Web Server)
 
+Tools and environment:
+
+- Eclipse 4.5.0(Mars) and Maven Plugin
+
+- Maven 3.3.3
+
+- Tomcat 7.0.53
+
+- JDK 1.7
+
+- Mysql 5.6
+
+- Nginx 1.8.0
+
+- Redis 3.0.0
+
+- Win7 and CentOS
 
 
