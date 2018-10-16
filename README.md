@@ -40,6 +40,6 @@ Disadvantages:
 
 - The communication between two modules use the http request, add the workload.
   
-![image](https://github.com/ZehuaWang/TaoTao_ShoppingSite/blob/master/pic/picture.txt)
+![image](https://github.com/ZehuaWang/TaoTao_ShoppingSite/blob/master/pic/SystemArch.png)
 
 
