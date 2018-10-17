@@ -90,3 +90,7 @@ The homepage of Taotao:
 This project adopt a Service-orinted architecture, the overview of service interface is shown below:
 
 ![image](https://github.com/ZehuaWang/TaoTao_ShoppingSite/blob/master/pic/system.png)
+
+Future improvements and todo list:
+
+- [ ] Adopt to dubbo framework, use socket to communicate between different modules. 
