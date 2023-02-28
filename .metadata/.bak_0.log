@@ -9,6 +9,7 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !ENTRY org.eclipse.egit.core 2 0 2018-08-07 13:19:24.705
 !MESSAGE Builtin LFS support not present/detected
 !STACK 0
+
 java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
 	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
