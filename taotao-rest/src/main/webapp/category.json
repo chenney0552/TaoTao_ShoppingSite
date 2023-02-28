@@ -411,5 +411,7 @@ category.getDataService({
 			"n": "服饰配件",
 			"i": ["/products/837.html|太阳镜", "/products/838.html|光学镜架/镜片", "/products/839.html|围巾/手套/帽子套装", "/products/840.html|袖扣", "/products/841.html|棒球帽", "/products/842.html|毛线帽", "/products/843.html|遮阳帽", "/products/844.html|老花镜", "/products/845.html|装饰眼镜", "/products/846.html|防辐射眼镜", "/products/847.html|游泳镜", "/products/848.html|女士丝巾/围巾/披肩", "/products/849.html|男士丝巾/围巾", "/products/850.html|鸭舌帽", "/products/851.html|贝雷帽", "/products/852.html|礼帽", "/products/853.html|真皮手套", "/products/854.html|毛线手套", "/products/855.html|防晒手套", "/products/856.html|男士腰带/礼盒", "/products/857.html|女士腰带/礼盒", "/products/858.html|钥匙扣", "/products/859.html|遮阳伞/雨伞", "/products/860.html|口罩", "/products/861.html|耳罩/耳包", "/products/862.html|假领", "/products/863.html|毛线/布面料", "/products/864.html|领带/领结/领带夹"]
 		}]
+		
 	}]
+	
 });
