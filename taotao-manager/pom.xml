@@ -15,8 +15,8 @@
 	<packaging>pom</packaging>
 
 	<dependencies>
+		
 		<dependency>
-
 			<groupId>com.taotao</groupId>
 			<artifactId>taotao-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
