@@ -86,7 +86,6 @@ Tools and environment:
 
 The homepage of Taotao:
 
-
 ![image](https://github.com/ZehuaWang/TaoTao_ShoppingSite/blob/master/pic/portal.png)
 
 This project adopt a Service-orinted architecture, the overview of service interface is shown below:
