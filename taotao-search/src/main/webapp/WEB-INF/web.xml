@@ -56,4 +56,5 @@
 		<servlet-name>taotao-search</servlet-name>
 		<url-pattern>/search/*</url-pattern>
 	</servlet-mapping>
+	
 </web-app>
